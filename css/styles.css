@@ -1381,6 +1381,116 @@ a:hover {
   border-color: var(--color-primary);
 }
 
+/* Newsletter (Google Form backend) */
+.newsletter-band {
+  background: linear-gradient(180deg, #ecfeff 0%, #f0fdfa 100%);
+  border-top: 1px solid #99f6e4;
+  padding: 2.5rem 0;
+  scroll-margin-top: 6.5rem;
+}
+
+.page--korelate-nav .newsletter-band {
+  padding-bottom: calc(2.5rem + 5.5rem);
+}
+
+.newsletter-band__inner {
+  display: grid;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.newsletter-band__copy h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+  margin: 0 0 0.5rem;
+  color: var(--color-header);
+}
+
+.newsletter-band__copy p {
+  margin: 0;
+  color: var(--color-muted);
+  max-width: 36rem;
+}
+
+.newsletter-form__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.newsletter-form__row input[type="email"] {
+  flex: 1 1 12rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius);
+  font: inherit;
+  background: var(--color-surface);
+}
+
+.newsletter-form__row input[type="email"]:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+  border-color: var(--color-primary);
+}
+
+.newsletter-form__consent {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  cursor: pointer;
+}
+
+.newsletter-form__consent input {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.newsletter-form__consent a {
+  text-decoration: underline;
+}
+
+.newsletter-form__honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.newsletter-form__status {
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
+}
+
+.newsletter-form__status--success {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+.newsletter-form__status--error {
+  color: #b91c1c;
+}
+
+.newsletter-form--done .newsletter-form__row,
+.newsletter-form--done .newsletter-form__consent {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .newsletter-band__inner {
+    grid-template-columns: 1fr 1.15fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+}
+
 /* Footer */
 .site-footer {
   background: #0f172a;
