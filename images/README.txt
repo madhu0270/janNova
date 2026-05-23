@@ -5,8 +5,6 @@ Replace any file here with your own asset (same filename) so HTML/CSS keep worki
 
 team/
   dinesh.jpg   — Headshot (sourced from public LinkedIn via unavatar.io).
-  ishitta.jpg  — Portrait from stock until you drop in an export from LinkedIn
-                 (automated LinkedIn fetch returned a placeholder for this profile).
   anika.jpg    — Headshot (sourced from public LinkedIn via unavatar.io).
 
 home/
